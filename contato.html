@@ -1,0 +1,257 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LOG FIBRA</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="site, palavra, chave" />
+<meta name="robots" content="all" />
+<meta name="rating" content="General" />
+<meta name="Author" content="Barra 3 Web Design" />
+<meta name="language" content="pt-br" />
+<link type="text/css" rel="stylesheet" href="css/style.css"  />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+</head>
+<body><script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#minhafox").hover(function(){
+
+			// $(this).find("#form-fox").slideToggle();
+			// $(this).find("#form-fox").toggle();
+
+			$("#formfox").validate({
+	                    rules: { 
+	                            usuario : { required:true },
+	                            senha 	: { required:true }
+	                    },
+	                    errorPlacement: function(error,element) {
+    						return true;
+  						} 
+	        });
+
+		});
+
+
+	});
+</script>
+
+<div id="header" class="limit relative">
+	
+	<div id="logo"><a href="index-2.html"><img src="img/logo.png" alt="LOG FIBRA"></a></div>
+	
+	<div id="nav">
+		<ul>
+			<li class="nav-emp"><a href="empresa.html">Empresa</a></li>
+			<li class="nav-pla"><a href="planos.html">Planos</a></li>
+			<li class="nav-ser"><a href="servicos.html">Serviços</a></li>
+			<li class="nav-cob"><a href="cobertura.html">Cobertura</a></li>
+			<li class="nav-cli"><a href="clientes.html">Clientes</a></li>
+			<li class="nav-con"><a href="contato.html">Contato</a></li>
+		</ul>
+	</div>
+
+	<a class="assine" href="contato.html">Assine Já</a>
+	
+	<a href="#" target="_blank">
+		<div id="minhafox">
+			<!-- <div id="form-fox">
+				<form id="formfox" action="" method="POST">
+					<label for="usuario">Usuário</label>
+						<input type="text" name="usuario">
+					<label for="senha">Senha</label>
+						<input type="password" name="senha">
+					<button type="submit">AVANÇAR></button>	
+				</form>			
+			</div>  -->	
+		</div>
+	</a>
+
+	<div class="telefones">
+		<div class="title">Televendas</div>	
+		<div class="fone">(62) 99601-7656 <span>Vivo</span></div><div class="fone">(62) 99601-7656 <span>Vivo</span></div><div class="fone">0800 00 0000 <br><span>Demais Localidades</span></div> 
+	</div>
+
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".nav-con a").addClass('active');
+
+		$("#formcontato").validate({
+	                    rules: { 
+	                            nome  	 : { required:true },
+	                            email 	 : { required:true, email:true },
+	                            telefone : { required:true },
+	                            cidade 	 : { required:true },
+	                            mensagem : { required:true }
+	                    },
+	                    errorPlacement: function(error,element) {
+    						return true;
+  						} 
+		});		
+
+	});
+</script>
+
+<style type="text/css">
+	
+</style>
+
+<div id="wrapper">
+	
+	<div id="navigation">
+		<div class="limit">Você está em: <span>Central de Atendimento</span></div>
+	</div>
+	
+	<div class="contato">
+		<div class="limit">
+
+			<div class="others left">
+
+				<div class="titlecontato left"><span>></span><div class="left">Central de <br />
+Atendimento</div></div>				
+				<div class="fale right">
+					<div class="falecom">
+						<span>></span>
+						<div class="left">
+							Fale<br>Com<br>a LOG FIBRA<br>
+						</div>
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+				<div class="face">
+						
+								        <div id="fb-root"></div>
+								        <script>(function(d, s, id) {
+								          var js, fjs = d.getElementsByTagName(s)[0];
+								          if (d.getElementById(id)) return;
+								          js = d.createElement(s); js.id = id;
+								          js.src = "../connect.facebook.net/pt_BR/all.html#xfbml=1";
+								          fjs.parentNode.insertBefore(js, fjs);
+								        }(document, 'script', 'facebook-jssdk'));</script>
+								        
+								        <div class="fb-like-box" data-href="#" data-height="230" data-width="240" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+								</div>
+
+				<div class="telefones">
+					<div class="title">Televendas</div>	
+					<div class="fone">(16) 99601-7656 <span>Vivo</span></div><div class="fone">(16) 99601 7656 <span>Vvivo</span></div><div class="fone">0800 000 0000 <span>Demais Localidades</span></div><div class="email">contato@g5web.com.br</div>		
+					
+	                    <div class="address">
+	                        Rua 1, 2<br>CEP: 3<br>Itajobi - SP - Brasil	                    </div>					
+				</div>
+
+			</div> <!-- others -->
+
+			<div class="form">
+				<form id="formcontato" action="http://www.foxinternet.com.br/mail/contato.php" method="POST">
+					<label for="nome">Nome</label>
+						<input type="text" name="nome">
+
+					<label for="email">E-mail</label>
+						<input type="text" name="email">
+
+					<label for="telefone">Telefone</label>
+						<input type="text" name="telefone">
+						
+					<label for="cidade">Cidade</label>
+						<input type="text" name="cidade">
+
+					<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem"></textarea>
+
+					<button type="submit">AVANÇAR ></button>	
+				</form>	
+
+
+			</div> <!-- form -->
+	
+
+		</div>	
+	</div>
+
+</div> <!-- wrapper -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#formnews").validate({
+	                    rules: { 
+	                            usuario : { required:true },
+	                            senha 	: { required:true }
+	                    },
+	                    errorPlacement: function(error,element) {
+    						return true;
+  						} 
+		});
+
+
+	});
+</script>
+
+<div id="section1">
+	
+	<div class="velocidade">
+		<div class="content">
+	
+			<div class="teste"><span>></span><div class="left">Teste<br>Sua<br>Velocidade</div></div>
+
+			<div class="foxteste">
+				<span>></span>
+				<div class="left">
+					LOG FIBRA<br>Teste<br>
+					<a href="http://www.speedtest.net/" target="_blank" class="btn">Iniciar></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<!-- 	<div class="newsletter">
+		<div class="content">
+			<div class="title"><span>></span>Fox Mail</div>
+			<div id="form-news">
+				<form id="formnews" action="" method="POST">
+					<label for="usuario">Usuário</label>
+						<input type="text" name="usuario">
+					<label for="senha">Senha</label>
+						<input type="text" name="senha"><br>
+					<button type="submit">AVANÇAR></button>	
+				</form>			
+			</div> 
+		</div>		
+	</div> -->
+
+	<div class="newsletter">
+		<div class="content">
+			<div class="title"><span>></span>LOG FIBRA Mail</div>
+			<div id="form-news">
+				<form id="login_form" action="#" method="POST" target="_top">
+					<label for="usuario">Usuário</label>
+						<input id="user" type="text" name="user">
+					<label for="senha">Senha</label>
+						<input id="pass" type="password" name="pass"><br>
+					<button id="login_submit" name="login" type="submit">AVANÇAR></button>	
+				</form>			
+			</div> 
+		</div>		
+	</div>
+
+	<div class="clear"></div>	
+
+</div>
+
+    <div id="footer">
+
+		<div class="limit relative">
+			<span>LOG FIBRA</span>
+			<div class="barra"><a href="../index.html" target-"_blank"><img src="img/barra3.png" alt="Barra3"></a></div>
+		</div>
+
+	</div> <!--footer -->
+
+</body>
+
+</html>
